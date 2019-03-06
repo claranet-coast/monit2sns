@@ -1,5 +1,5 @@
-monito2sns
-==========
+monit2sns
+=========
 
 A simple script to send Monit alerts using AWS SNS.
 
