@@ -14,7 +14,7 @@ function debug_sns_send_command
 
 function sns_send_command
 {
-    aws sns publish --topic-arn $AWS_TOPIC_ARN --message \"$MESSAGE\" --region $AWS_DEFAULT_REGION
+    aws sns publish --topic-arn $AWS_TOPIC_ARN --message "$MESSAGE" --region $AWS_DEFAULT_REGION
 }
 
 while getopts ":c:m:v" opt; do
@@ -39,4 +39,4 @@ if [ -z "$MESSAGE" ]; then usage "Message not set, it must be provided on the co
 if [ -z "$AWS_TOPIC_ARN" ]; then usage "Topic ARN not set, it must be provided"; fi;
 if [ -z "$AWS_DEFAULT_REGION" ]; then usage "AWS Region not set, it must be provided"; fi;
 
-debug_sns_send_command
+sns_send_command
