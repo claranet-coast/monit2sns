@@ -1,0 +1,2 @@
+AWS_TOPIC_ARN="arn:aws:sns:eu-west-1:123456789012:sns-topic"
+AWS_DEFAULT_REGION="eu-west-1"
